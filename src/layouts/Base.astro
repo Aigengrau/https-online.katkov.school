@@ -1,0 +1,124 @@
+---
+import '../styles/base.css';
+import '../styles/artboards.css';
+import { site } from '../data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.title, description = site.description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url).href;
+const asset = (f: string) => `${import.meta.env.BASE_URL}/${f}`.replace(/\/+/g, '/');
+const ogUrl = new URL(asset(site.ogImage), Astro.site ?? site.url).href;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href={asset('favicon.ico')} sizes="any" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+
+  <body class="t-body">
+    <div id="allrecords" class="t-records">
+      <slot />
+    </div>
+
+    <script>
+      // --- scroll-in animations -------------------------------------------
+      // Replaces Tilda's animation runtime. Elements carry data-anim plus the
+      // timing as custom properties; base.css owns the visual definition.
+      const animated = document.querySelectorAll<HTMLElement>('.anim-init');
+
+      if (animated.length) {
+        const revealAll = () => animated.forEach((el) => el.classList.add('anim-in'));
+
+        if (!('IntersectionObserver' in window)) {
+          revealAll();
+        } else {
+          const io = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                entry.target.classList.add('anim-in');
+                io.unobserve(entry.target);
+              }
+            },
+            { rootMargin: '0px 0px -10% 0px', threshold: 0.01 },
+          );
+
+          // Anything already on screen is revealed synchronously rather than
+          // waiting for the observer's first async callback. That keeps
+          // above-the-fold content correct on the very first frame, and stops
+          // a delayed callback from leaving it visibly displaced.
+          const viewportH = window.innerHeight;
+          animated.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < viewportH && rect.bottom > 0) el.classList.add('anim-in');
+            else io.observe(el);
+          });
+
+          // Never strand content at opacity 0 if a callback is missed.
+          window.addEventListener('load', () => window.setTimeout(revealAll, 2000));
+        }
+      }
+
+      // --- galleries --------------------------------------------------------
+      document.querySelectorAll<HTMLElement>('[data-gallery]').forEach((root) => {
+        const track = root.querySelector<HTMLElement>('[data-gallery-track]');
+        const slides = [...root.querySelectorAll<HTMLElement>('[data-gallery-slide]')];
+        const dots = [...root.querySelectorAll<HTMLButtonElement>('[data-gallery-dot]')];
+        if (!track || slides.length < 2) return;
+
+        const loop = root.dataset.loop !== 'n';
+        let index = 0;
+
+        const render = () => {
+          track.style.transform = `translateX(${-index * 100}%)`;
+          slides.forEach((s, i) => s.setAttribute('aria-hidden', String(i !== index)));
+          dots.forEach((d, i) => d.setAttribute('aria-selected', String(i === index)));
+        };
+
+        const go = (next: number) => {
+          if (loop) index = (next + slides.length) % slides.length;
+          else index = Math.min(Math.max(next, 0), slides.length - 1);
+          render();
+        };
+
+        root.querySelector('[data-gallery-prev]')?.addEventListener('click', () => go(index - 1));
+        root.querySelector('[data-gallery-next]')?.addEventListener('click', () => go(index + 1));
+        dots.forEach((dot, i) => dot.addEventListener('click', () => go(i)));
+
+        // Touch swipe
+        let startX = 0;
+        root.addEventListener('touchstart', (e) => { startX = e.touches[0]!.clientX; }, { passive: true });
+        root.addEventListener('touchend', (e) => {
+          const dx = e.changedTouches[0]!.clientX - startX;
+          if (Math.abs(dx) > 40) go(dx < 0 ? index + 1 : index - 1);
+        }, { passive: true });
+
+        render();
+      });
+    </script>
+  </body>
+</html>

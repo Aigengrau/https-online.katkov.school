@@ -1,0 +1,2251 @@
+[
+  {
+    "id": "rec370492459",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "370492459",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "800",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "1200",
+        "480": "1396",
+        "640": "1396",
+        "960": "835"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634240999434",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinright",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634240999442",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinright",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6339-663-ba8effbe3dd2b3e6302c.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634240999448",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "<strong>Павел Катков</strong>"
+      },
+      {
+        "id": "1634240999454",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Вебинар Павла Каткова"
+      },
+      {
+        "id": "1634240999477",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/3032-663-c5a6caaf6aa3eb594984.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1634240999525",
+        "type": "text",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "АЛГОРИТМ <br>ВЗРЫВНОГО РОСТА ЮРИДИЧЕСКОГО БИЗНЕСА"
+      },
+      {
+        "id": "1634240999528",
+        "type": "text",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "Шаги, которые помогут Вам:"
+      },
+      {
+        "id": "1634240999535",
+        "type": "text",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "вырасти в прибыли кратно; <br>масштабироваться и выйти из операционки."
+      },
+      {
+        "id": "1634240999538",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "bgImage": "../assets/img/6331-393-6407c7f5384308022d88.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634240999558",
+        "type": "button",
+        "anim": null,
+        "atomTag": "a",
+        "href": "#reg",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ЗАРЕГИСТРИРОВАТЬСЯ"
+      },
+      {
+        "id": "1634240999564",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634240999570",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634240999616",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634240999621",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634240999625",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "bgImage": "../assets/img/6561-663-955fd8887307be8902df.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634241232781",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Российский юрист, предприниматель и общественный деятель. Работал с АФK \"Система\", ПИК, 1С, РЖД, Росводоканал, Cоюзмультфильм, Кассир.ру, ivi.ru, reg.ru, Amway, Veropharm, Mercedes, IFPI (Warner, Sony, Universal Music)."
+      },
+      {
+        "id": "1634724172368",
+        "type": "html",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom tn-atom__html",
+        "html": "<strong class=\"dates\"><span class=\"mydate\"></span><style=\"font-size: 24px\"> <br>в 19:30 МСК </span></strong><style>.dates {\nfont-size:14px;\nfont-weight:200;\ncolor:#ff9800;\nfont-family:'FuturaPT',Arial,sans-serif;\nline-height: 1.35;\n}\n.mydate {\ncolor:#ff9800;\nfont-size:14px;\n}</style>"
+      },
+      {
+        "id": "1637525620524",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "<strong>Бонус после регистрации: </strong><br>PDF «5 точек роста для юридического бизнеса»‎."
+      },
+      {
+        "id": "1637525741231",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "<strong>Бонус после регистрации: </strong><br>PDF «5 точек роста <br>для юридического бизнеса»‎."
+      },
+      {
+        "id": "1634240999586",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/6131-616-81061f619a351411c87e.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1634240999592",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/3561-333-73f8708bdb56129be99b.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1634240999597",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/3435-663-c63888a580498bb14971.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1650286351381",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "сегодня в 19.30"
+      }
+    ]
+  },
+  {
+    "id": "rec427223187",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "427223187",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "700",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "1099",
+        "480": "1229",
+        "640": "1429",
+        "960": "999"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634244301690",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ЧТО ВАС ЖДЁТ НА ВЕБИНАРЕ"
+      },
+      {
+        "id": "1634244301703",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244301720",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244301729",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244301734",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Технология"
+      },
+      {
+        "id": "1634244301739",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Три алгоритма:"
+      },
+      {
+        "id": "1634244301746",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Кейсы,"
+      },
+      {
+        "id": "1634244301749",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "создания, роста и масштабирования юридического бизнеса — подводные камни и скрытые возможности."
+      },
+      {
+        "id": "1634244301754",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "для юридического стартапа, для развивающегося бизнеса и для собственника, желающего выйти из операционки. Один из алгоритмов рассмотрим подробнее."
+      },
+      {
+        "id": "1634244301759",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "примеры из обширной практики, непривычные вопросы и ответы — которые в своё время помогли спикеру изменить масштаб."
+      },
+      {
+        "id": "1634244301763",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244301769",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244301774",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244301778",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/6330-323-a9af48f09e908b89fb66.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1634244301783",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/6562-313-bb69b7a3af4765626bbb.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1634244301787",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/6261-616-305b46cfe4a9aede4872.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      }
+    ]
+  },
+  {
+    "id": "rec370491765",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "370491765",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "1695",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "2175",
+        "480": "2245",
+        "640": "2265"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634244873643",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Вам точно нужно прийти на вебинар, если:"
+      },
+      {
+        "id": "1634244873658",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Ваша юридическая компания довольно успешно работает, <strong>но расти не получается.</strong>"
+      },
+      {
+        "id": "1634244873665",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Ваша компания успешно работает, при этом Вы чувствуете, что сами уже переросли текущий масштаб, <strong>а выйти на новый не получается.</strong>"
+      },
+      {
+        "id": "1634244873668",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Вы давно думаете о том, чтобы выйти из операционки, <strong>но не хватает нескольких важных ответов.</strong>"
+      },
+      {
+        "id": "1634244873671",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244873679",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244873685",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinright",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3838-626-6940391fa1660e7d05a1.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634244873689",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Вы хотите создать юридическую компанию — <strong>в какой точке пути Вы бы сейчас ни находились.</strong>"
+      },
+      {
+        "id": "1634244873692",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Вы занимаетесь частной практикой, <strong>но осознаёте, что бизнес</strong> — гораздо более эффективный способ ведения дел и работы с клиентами."
+      },
+      {
+        "id": "1634244873695",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "У вас уже есть юридическая компания, <strong>но Вы понимаете, что это пока НЕ бизнес</strong> — на Вас 120% ответственности и 150% работы."
+      },
+      {
+        "id": "1634244873699",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244873705",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634244873711",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3237-646-3e074cc0fa6738cef706.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634244873715",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6639-353-627d10b98e11e1b96ae0.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634244873720",
+        "type": "button",
+        "anim": null,
+        "atomTag": "a",
+        "href": "#reg",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ЗАПИСАТЬСЯ НА ВЕБИНАР"
+      },
+      {
+        "id": "1634244873725",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Бонус после регистрации: ‎"
+      },
+      {
+        "id": "1634244873729",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "bgImage": "../assets/img/6461-393-955fd8887307be8902df.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634245286870",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "PDF «5 точек роста для юридического бизнеса».‎"
+      },
+      {
+        "id": "1634244873742",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "А можно забрать алгоритм, по которому прошёл я и по которому развивается большинство успешных юридических компаний."
+      },
+      {
+        "id": "1634244873739",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "Можно расти методом проб и ошибок."
+      },
+      {
+        "id": "1634244873734",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      }
+    ]
+  },
+  {
+    "id": "rec370489808",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "370489808",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "1687",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "1657",
+        "480": "1697",
+        "640": "1757",
+        "960": "1607"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634245563762",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "На вебинаре вы получите несколько важных ответов:"
+      },
+      {
+        "id": "1634245563768",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Из какой позиции в юридической карьере можно начинать бизнес."
+      },
+      {
+        "id": "1634245563774",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Что характеризует эффективных собственников."
+      },
+      {
+        "id": "1634245563777",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Какие стереотипы мешают Вам расти на каждом из этапов."
+      },
+      {
+        "id": "1634245563781",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Несколько точек роста на каждом этапе — в маркетинге, продажах, управлении и других аспектах."
+      },
+      {
+        "id": "1634245563784",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "3 алгоритма на каждом из этапов — старт бизнеса, рост существующего бизнеса, масштабирование и выход из операционного управления."
+      },
+      {
+        "id": "1634245563787",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245563793",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245563803",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245563807",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245563812",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245563816",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "И, наконец, мы разберём один из алгоритмов максимально подробно."
+      },
+      {
+        "id": "1634245563824",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "Этот вебинар — для юристов и владельцев юридических компаний, которые хотят расти."
+      },
+      {
+        "id": "1634245563828",
+        "type": "button",
+        "anim": null,
+        "atomTag": "a",
+        "href": "#reg",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ИЗМЕНИТЬ МАСШТАБ"
+      },
+      {
+        "id": "1634245563832",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Бонус после регистрации:"
+      },
+      {
+        "id": "1634245563835",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "bgImage": "../assets/img/6139-623-955fd8887307be8902df.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634245563841",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6536-666-faf17b04842595d35755.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634245648382",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "PDF «5 точек роста для юридического бизнеса»‎."
+      },
+      {
+        "id": "1634246654003",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      }
+    ]
+  },
+  {
+    "id": "rec370490595",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "370490595",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "1033",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "1293",
+        "480": "1203",
+        "640": "1253",
+        "960": "1003"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634245991176",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ПРОГРАММА ВЕБИНАРА"
+      },
+      {
+        "id": "1634245991226",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Бонус после регистрации:"
+      },
+      {
+        "id": "1634245991230",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "bgImage": "../assets/img/3536-353-955fd8887307be8902df.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634245991235",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Из какой позиции в юридической карьере можно начинать бизнес."
+      },
+      {
+        "id": "1634245991240",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245991246",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245991250",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245991254",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245991260",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634245991265",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "1"
+      },
+      {
+        "id": "1634245991269",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "2"
+      },
+      {
+        "id": "1634245991273",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "3"
+      },
+      {
+        "id": "1634245991277",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "4"
+      },
+      {
+        "id": "1634245991280",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "5"
+      },
+      {
+        "id": "1634245991282",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Что характеризует эффективных собственников."
+      },
+      {
+        "id": "1634245991285",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Какие стереотипы мешают Вам расти на каждом из этапов."
+      },
+      {
+        "id": "1634245991289",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Что делать в маркетинге, продажах, управлении и других аспектах бизнеса, чтобы расти кратно."
+      },
+      {
+        "id": "1634245991292",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Как стартовать бизнес, расти в существующей практике, или масштабировать и выйти из операционного управления на позицию \"собственник\"."
+      },
+      {
+        "id": "1634245991317",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3732-373-207b57653055f3c049f9.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634245991323",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3163-646-0d5485449dc43c108405.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634247308566",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634247340739",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634247357162",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634247372027",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634247399019",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "PDF «5 точек роста для юридического бизнеса»‎."
+      },
+      {
+        "id": "1634247838450",
+        "type": "button",
+        "anim": null,
+        "atomTag": "a",
+        "href": "#reg",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ПОСЕТИТЬ ВЕБИНАР"
+      }
+    ]
+  },
+  {
+    "id": "rec367361364",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "367361364",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "1387",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "2187",
+        "480": "2047",
+        "640": "1997",
+        "960": "1337"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634248061570",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ОБ АВТОРЕ"
+      },
+      {
+        "id": "1634248061584",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinright",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3732-656-2db7dc8c6a3900eed9d0.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248061596",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Российский юрист, предприниматель и общественный деятель, 17 лет в юридическом консалтинге."
+      },
+      {
+        "id": "1634248061601",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "В 2018 году запускает процесс построения независимой от него системы управления компанией, продажами и продуктами. В 2021 году выходит из операционного управления бизнесом на позицию собственника.<br>"
+      },
+      {
+        "id": "1634248061604",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Член Ассоциации юристов России и Комитета ТПП РФ по предпринимательству в сфере медиакоммуникаций.<br>"
+      },
+      {
+        "id": "1634248061608",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Имеет 2 высших образования (МФЮА и РАГС при Президенте РФ), окончил аспирантуру РГАИС."
+      },
+      {
+        "id": "1634248061610",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248061616",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248061620",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248061625",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Эксперт рабочей группы по торговле и инвестициям Экспертного совета БРИКС, член Экспертного совета при Госкомиссии по противодействию незаконному обороту промышленной продукции Правительства Российской Федерации."
+      },
+      {
+        "id": "1634248061630",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Председатель онлайн-клуба юристов KEEP TALKING, автор лекций и мастер-классов на площадках Сколково, ФРИИ, РИФ + КИБ, IT Summer School, редактор телеграм-канала БАНК ЗНАНИЙ Павла Каткова."
+      },
+      {
+        "id": "1634248061634",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Выпускники личной программы наставничества открыли собственный юридический бизнес, а также сделали карьеру в компаниях Viacom (медиаконгломерат, включающий в себя сети MTV Networks и BET, канал Nickelodeon, а также Paramount Pictures), Всемирная организация интеллектуальной собственности (WIPO), Читай-город и других крупных российских и международных компаниях.<br>"
+      },
+      {
+        "id": "1634248061638",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248061644",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248061649",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6633-623-2ec43c6fe4024c38314a.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248061654",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6531-636-34e66a815499dcac7d93.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248061659",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3465-363-a9d432d821ea42ba5b81.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      }
+    ]
+  },
+  {
+    "id": "rec371472791",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "371472791",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "715",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "735",
+        "480": "825",
+        "640": "655"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634248271317",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Павел Катков преподает и проводит лекции и мастер-классы в ведущих ВУЗах страны"
+      },
+      {
+        "id": "1634248271353",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6133-646-a84a165c1e636933b3a1.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248271369",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ВГИК <br>им. С.А.Герасимова"
+      },
+      {
+        "id": "1634248271376",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Британская высшая школа дизайна"
+      },
+      {
+        "id": "1634248271384",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3066-323-9eb8a528e122a8391e37.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248271362",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "МГУ им.М.В.Ломоносова,"
+      },
+      {
+        "id": "1634248271326",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3332-616-ee85cf46b0241f69f079.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248271365",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "НИУ ВШЭ, РГАИС при Роспатенте"
+      },
+      {
+        "id": "1634248271340",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3631-653-b2792f52f213cfb55ea6.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248271380",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Санкт-Петербургский ГУ телекоммуникаций им. проф. М.А.Бонч-Бруевича (СПб ГУТ)"
+      },
+      {
+        "id": "1634248271358",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3631-373-7ae10caab2f079dae392.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248271372",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Московская школа кино (Moscow Film School)"
+      },
+      {
+        "id": "1634248271347",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6636-346-6bb0a12f82001f769aed.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      }
+    ]
+  },
+  {
+    "id": "rec370490781",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "370490781",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "2736",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "1706",
+        "480": "1946",
+        "640": "2266",
+        "960": "2456"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634248543854",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Павел публикуется в ТОП-медиа"
+      },
+      {
+        "id": "1634248543864",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6235-336-Group_23_-_.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543877",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6566-343-e80a17eb2e7741f5d866.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543890",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3139-393-f96ce12cdbefa8262910.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543896",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3430-393-Group_24_-_.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543902",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3739-353-12cb789721e8ec1be51f.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543907",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3033-383-24104af7f5041df1ae83.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543927",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6538-613-ee1d5e6f27a7ce2f4431.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543931",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3938-353-87f15b4ff84da3f072f5.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543936",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3639-363-d766e0b87dfac13c76a2.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543940",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6564-363-d0e3adf62dd4511634ec.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543944",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6139-636-65c5fe716419b8518c12.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543950",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3333-343-b86ee79e8f7725b2c729.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543954",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3361-386-99450db2cff11071edd9.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543958",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3263-643-image_1363.jpg",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248543962",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248543967",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248543971",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634248543977",
+        "type": "button",
+        "anim": null,
+        "atomTag": "a",
+        "href": "#reg",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ИДУ НА ВЕБИНАР К ПАВЛУ"
+      },
+      {
+        "id": "1634248543982",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "Бонус после регистрации:"
+      },
+      {
+        "id": "1634248543985",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "bgImage": "../assets/img/6264-346-955fd8887307be8902df.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248544002",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3164-313-df7ec41674696e60c2bd.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248544006",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinup",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/6335-366-1dd44fe04433a0d9f1f9.png",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634248760717",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "PDF «5 точек роста для юридического бизнеса»‎."
+      },
+      {
+        "id": "1634315281425",
+        "type": "shape",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634315281432",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "Цель и миссия Павла"
+      },
+      {
+        "id": "1634315281437",
+        "type": "text",
+        "anim": {
+          "style": "zoomin",
+          "duration": 1,
+          "distance": 0,
+          "scale": 0.9
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "atomClass": "tn-atom",
+        "html": "Помочь профессионалам юридической сферы создать устойчивый прибыльный бизнес с возможностью выйти из операционного управления и жить интересной, полной, свободной жизнью."
+      },
+      {
+        "id": "1634315846092",
+        "type": "gallery",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom tn-atom__gallery",
+        "images": [
+          {
+            "src": "../assets/img/3534-363-Group_23_-_.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3763-336-Group_24_-_.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6335-613-Group_22.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3134-393-Group_26_-_.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6265-346-Group_25.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6636-663-image.png",
+            "alt": "",
+            "title": ""
+          }
+        ],
+        "gallery": {
+          "loop": true,
+          "stretch": "contain",
+          "imgPosition": "center center",
+          "arrows": true,
+          "dots": true,
+          "arrowColor": "#000",
+          "arrowBgColor": "#e8e8e8",
+          "dotsBgColor": "#999999",
+          "dotsBgColorActive": "#222",
+          "arrowSize": null,
+          "dotsSize": 8
+        },
+        "html": ""
+      },
+      {
+        "id": "1634315882043",
+        "type": "gallery",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom tn-atom__gallery",
+        "images": [
+          {
+            "src": "../assets/img/3362-336-image_1357.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6439-396-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3135-616-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3861-633-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3038-656-image.png",
+            "alt": "",
+            "title": ""
+          }
+        ],
+        "gallery": {
+          "loop": true,
+          "stretch": "contain",
+          "imgPosition": "center center",
+          "arrows": true,
+          "dots": true,
+          "arrowColor": "#000",
+          "arrowBgColor": "#e8e8e8",
+          "dotsBgColor": "#999999",
+          "dotsBgColorActive": "#222",
+          "arrowSize": null,
+          "dotsSize": 8
+        },
+        "html": ""
+      },
+      {
+        "id": "1634315888243",
+        "type": "gallery",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom tn-atom__gallery",
+        "images": [
+          {
+            "src": "../assets/img/6333-323-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6561-323-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3633-373-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6134-343-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6437-346-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/6663-326-image.png",
+            "alt": "",
+            "title": ""
+          },
+          {
+            "src": "../assets/img/3633-373-image.png",
+            "alt": "",
+            "title": ""
+          }
+        ],
+        "gallery": {
+          "loop": true,
+          "stretch": "contain",
+          "imgPosition": "center center",
+          "arrows": true,
+          "dots": true,
+          "arrowColor": "#000",
+          "arrowBgColor": "#e8e8e8",
+          "dotsBgColor": "#999999",
+          "dotsBgColorActive": "#222",
+          "arrowSize": null,
+          "dotsSize": 8
+        },
+        "html": ""
+      }
+    ]
+  },
+  {
+    "id": "rec367363177",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "367363177",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "505",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "320": "585",
+        "480": "615",
+        "640": "475"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634249217308",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "До встречи на онлайн-семинаре"
+      },
+      {
+        "id": "1634249217317",
+        "type": "button",
+        "anim": null,
+        "atomTag": "a",
+        "href": "#reg",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ЗАПИСАТЬСЯ НА ВЕБИНАР"
+      },
+      {
+        "id": "1634249217334",
+        "type": "shape",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": ""
+      },
+      {
+        "id": "1634249217341",
+        "type": "shape",
+        "anim": {
+          "style": "fadeinleft",
+          "duration": 1,
+          "distance": 100
+        },
+        "atomTag": "div",
+        "hasAnimateClass": true,
+        "bgImage": "../assets/img/3561-373-H08a6ce962c26479db7c.jpeg",
+        "atomClass": "tn-atom t-bgimg",
+        "html": ""
+      },
+      {
+        "id": "1634249217347",
+        "type": "image",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/6363-353-372979005202ee1ea2eb.svg",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1634724563641",
+        "type": "html",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom tn-atom__html",
+        "html": "<strong class=\"dates\"><span class=\"mydate\"></span><style=\"font-size: 24px\"> <br>в 19:30 по МСК </span></strong><style>.dates {\nfont-size:14px;\nfont-weight:200;\ncolor:#ff9800;\nfont-family:'FuturaPT',Arial,sans-serif;\nline-height: 1.35;\n}\n.mydate {\ncolor:#ff9800;\nfont-size:14px;\n}</style>"
+      },
+      {
+        "id": "1650286248107",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "сегодня в 19.30"
+      }
+    ]
+  },
+  {
+    "id": "rec367364060",
+    "kind": "artboard",
+    "recordType": "396",
+    "numericId": "367364060",
+    "artboard": {
+      "screens": "320,480,640,960,1200",
+      "height": "129",
+      "valign": "center",
+      "upscale": "grid",
+      "heights": {
+        "480": "189"
+      }
+    },
+    "elements": [
+      {
+        "id": "1634249498633",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ИП Катков П.А.<br><br>"
+      },
+      {
+        "id": "1634249498642",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "ИНН: 732505310905<br />ОГРНИП: 317774600175458"
+      },
+      {
+        "id": "1634319716884",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "<a href=\"https://katkov.school/oferta\" rel=\"noopener noreferrer\" style=\"color: rgb(0, 0, 0);\">Оферта</a>"
+      },
+      {
+        "id": "1634320234107",
+        "type": "text",
+        "anim": null,
+        "atomTag": "div",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "html": "<a href=\"https://katkov.school/soglashenie\" rel=\"noopener noreferrer\" style=\"color: rgb(0, 0, 0);\">Политика конфиденциальности</a>"
+      },
+      {
+        "id": "1650286030449",
+        "type": "image",
+        "anim": null,
+        "atomTag": "a",
+        "href": "https://t.me/pavelkatkov",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/3430-633-Telegram-Transparent.png",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      },
+      {
+        "id": "1650286030465",
+        "type": "image",
+        "anim": null,
+        "atomTag": "a",
+        "href": "https://wa.me/79857653422",
+        "hasAnimateClass": false,
+        "atomClass": "tn-atom",
+        "src": "../assets/img/3430-393-WhatsApp-Logo-Backgr.png",
+        "alt": "",
+        "imgClass": "tn-atom__img t-img"
+      }
+    ]
+  },
+  {
+    "id": "rec385634496",
+    "kind": "popup",
+    "recordType": "868"
+  },
+  {
+    "id": "rec392127642",
+    "kind": "cookies",
+    "recordType": "886"
+  }
+]

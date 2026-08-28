@@ -1,0 +1,157 @@
+---
+import type { ZeroElement } from '../data/types';
+
+interface Props {
+  el: ZeroElement;
+  recId: string;
+}
+
+const { el, recId } = Astro.props;
+const images = el.images ?? [];
+const o = el.gallery;
+
+const assets = import.meta.glob<string>('../assets/img/*', { eager: true, query: '?url', import: 'default' });
+const assetUrl = (ref: string) => assets[ref] ?? ref;
+
+const galleryId = `gal-${recId}-${el.id}`;
+---
+
+<div
+  class="tn-atom gallery"
+  id={galleryId}
+  data-gallery
+  data-loop={o?.loop ? 'y' : 'n'}
+  style={`--dot:${o?.dotsBgColor};--dot-active:${o?.dotsBgColorActive};--arrow:${o?.arrowColor};--arrow-bg:${o?.arrowBgColor};--arrow-size:${o?.arrowSize}px;--dot-size:${o?.dotsSize}px;`}
+>
+  <div class="gallery__track" data-gallery-track>
+    {
+      images.map((img, i) => (
+        <figure class="gallery__slide" data-gallery-slide aria-hidden={i === 0 ? 'false' : 'true'}>
+          <img
+            src={assetUrl(img.src)}
+            alt={img.alt}
+            style={`object-fit:${o?.stretch === 'contain' ? 'contain' : 'cover'};object-position:${o?.imgPosition ?? 'center center'};`}
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      ))
+    }
+  </div>
+
+  {
+    o?.arrows && images.length > 1 && (
+      <>
+        <button type="button" class="gallery__arrow gallery__arrow--prev" data-gallery-prev aria-label="Предыдущее изображение">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="gallery__arrow gallery__arrow--next" data-gallery-next aria-label="Следующее изображение">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </>
+    )
+  }
+
+  {
+    o?.dots && images.length > 1 && (
+      <div class="gallery__dots" role="tablist" aria-label="Слайды">
+        {images.map((_, i) => (
+          <button
+            type="button"
+            class="gallery__dot"
+            data-gallery-dot={i}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            aria-label={`Слайд ${i + 1}`}
+          />
+        ))}
+      </div>
+    )
+  }
+</div>
+
+<style>
+  /* Fills the element frame exactly, so slide height resolves against a
+     definite box instead of stretching the surrounding table cell. */
+  .gallery {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  .gallery__track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+
+  .gallery__slide {
+    flex: 0 0 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .gallery__slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery__arrow {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    display: grid;
+    place-items: center;
+    inline-size: calc(var(--arrow-size, 30px) * 1.6);
+    block-size: calc(var(--arrow-size, 30px) * 1.6);
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: var(--arrow-bg, transparent);
+    color: var(--arrow, #fff);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .gallery__arrow svg {
+    inline-size: var(--arrow-size, 30px);
+    block-size: var(--arrow-size, 30px);
+  }
+
+  .gallery__arrow--prev {
+    left: 4px;
+  }
+
+  .gallery__arrow--next {
+    right: 4px;
+  }
+
+  .gallery__dots {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 2;
+  }
+
+  .gallery__dot {
+    inline-size: var(--dot-size, 10px);
+    block-size: var(--dot-size, 10px);
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: var(--dot, #fff);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .gallery__dot[aria-selected='true'] {
+    background: var(--dot-active, #ff9800);
+    opacity: 1;
+  }
+</style>

@@ -1,0 +1,25 @@
+{
+  "name": "online-katkov-school",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Лендинг вебинара Павла Каткова — статическая копия на Astro",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.14.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.18.8",
+    "sharp": "^0.34.4",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  }
+}

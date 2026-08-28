@@ -1,0 +1,64 @@
+---
+import Gallery from './Gallery.astro';
+import type { ZeroElement } from '../data/types';
+
+interface Props {
+  el: ZeroElement;
+  recId: string;
+}
+
+const { el, recId } = Astro.props;
+
+/** Images live in src/assets so Vite fingerprints them and the base path is applied. */
+const assets = import.meta.glob<string>('../assets/img/*', { eager: true, query: '?url', import: 'default' });
+const assetUrl = (ref?: string) => {
+  if (!ref) return undefined;
+  const key = ref.replace(/^\.\.\/assets\/img\//, '../assets/img/');
+  return assets[key] ?? ref;
+};
+
+const classes = ['t396__elem', 'tn-elem', el.anim ? 'anim-init' : null].filter(Boolean).join(' ');
+
+// Animation parameters travel as custom properties so base.css owns the timing.
+const animVars = el.anim
+  ? [
+      `--anim-duration:${el.anim.duration}s`,
+      el.anim.distance ? `--anim-distance:${el.anim.distance}px` : null,
+      el.anim.scale ? `--anim-scale:${el.anim.scale}` : null,
+      el.anim.delay ? `--anim-delay:${el.anim.delay}s` : null,
+    ]
+      .filter(Boolean)
+      .join(';')
+  : undefined;
+
+const bg = assetUrl(el.bgImage);
+const atomStyle = bg ? `background-image:url(${bg});background-size:cover;` : undefined;
+
+const isLink = el.atomTag === 'a' && el.href;
+const AtomTag = isLink ? 'a' : 'div';
+---
+
+<div
+  class={classes}
+  data-elem-id={el.id}
+  data-elem-type={el.type}
+  data-anim={el.anim?.style}
+  style={animVars}
+>
+  {
+    el.type === 'image' ? (
+      <img class={el.imgClass || 'tn-atom__img'} src={assetUrl(el.src)} alt={el.alt || ''} loading="lazy" decoding="async" />
+    ) : el.type === 'gallery' ? (
+      <Gallery el={el} recId={recId} />
+    ) : (
+      <AtomTag
+        class={el.type === 'html' ? 'tn-atom tn-atom__html' : 'tn-atom'}
+        href={isLink ? el.href : undefined}
+        target={isLink ? el.target : undefined}
+        rel={isLink ? el.rel : undefined}
+        style={atomStyle}
+        set:html={el.html ?? ''}
+      />
+    )
+  }
+</div>

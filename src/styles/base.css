@@ -1,0 +1,240 @@
+/* =========================================================================
+   Artboard runtime
+   --------------------------------------------------------------------------
+   The original page was built in Tilda's Zero Block: every element is
+   absolutely positioned inside a fixed-height artboard, with one set of
+   coordinates per breakpoint (1200 / 960 / 640 / 480 / 320).
+
+   `artboards.css` carries those coordinates verbatim — it is the design spec.
+   This file is the small runtime they were authored against, reimplemented
+   here so none of Tilda's framework CSS or JS ships.
+
+   The table/table-cell model is deliberate, not legacy: the geometry was
+   authored against it, and vertical centring plus text wrapping inside a
+   fixed-size cell behave subtly differently under flexbox.
+   ========================================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * No `overflow-x: hidden` on body: it would make body a scroll container and
+ * move the scrollbar gutter, shifting the whole centred layout by half a
+ * scrollbar. Off-canvas elements are already clipped by .t396__artboard.
+ */
+
+/*
+ * No font-family on <body> on purpose: every text element carries its own
+ * family in artboards.css, and inheriting a default here would change how the
+ * few elements that rely on the browser default resolve.
+ */
+
+img {
+  border: 0;
+}
+
+/* --- artboard ---------------------------------------------------------- */
+
+.t396 {
+  position: relative;
+}
+
+.t396__artboard {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /*
+   * Puts each artboard on its own compositing layer, which is what makes
+   * Chrome rasterise text with grayscale antialiasing rather than subpixel
+   * (RGB) antialiasing. The original gets the same layer as a side effect of
+   * the fade-in Tilda runs on its records container, so without this the copy
+   * draws identical glyphs with visible colour fringing.
+   *
+   * Safe here: every child is absolutely positioned against this element
+   * already, so introducing a containing block changes no geometry.
+   */
+  transform: translateZ(0);
+}
+
+.t396__carrier,
+.t396__filter {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t396__carrier {
+  z-index: 0;
+}
+
+.t396__filter {
+  z-index: 1;
+}
+
+/* --- element + atom ---------------------------------------------------- */
+
+.t396__elem {
+  position: absolute;
+  display: table;
+  box-sizing: border-box;
+}
+
+/*
+ * `display: table` treats height as a minimum, so a slider taller than its
+ * frame would stretch the element. Galleries get a hard frame instead and
+ * their content is positioned to fill it exactly.
+ */
+.t396__elem[data-elem-type='gallery'] {
+  overflow: hidden;
+}
+
+.t396 .tn-atom {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*
+   * 142 of the generated rules say `border-style: solid` without a width, which
+   * would fall back to `medium` (3px) and add 6px to every element's height.
+   * Tilda's runtime zeroed this; the rules that actually want a border set
+   * border-width explicitly, so a 0 default is safe.
+   */
+  border-width: 0;
+}
+
+.t396 a.tn-atom {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.t396 .tn-atom__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * A few images have an intrinsic aspect ratio that does not match the box the
+ * artboard gives them. `display: table` treats height as a minimum, so those
+ * would stretch their element instead of sitting inside it — the original
+ * clipped them to the frame.
+ */
+/*
+ * Block rather than table layout: inside a table the image lands in an
+ * anonymous cell of indefinite height, so `height: 100%` cannot resolve and the
+ * frame stretches to the image's intrinsic height instead of clipping it.
+ * With `display: block` the declared height wins where there is one, and falls
+ * back to auto where there isn't.
+ */
+.t396__elem[data-elem-type='image'] {
+  display: block;
+  overflow: hidden;
+}
+
+.t396__elem[data-elem-type='image'] .tn-atom__img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.t396 .tn-atom__html {
+  vertical-align: top;
+}
+
+.t396 .tn-atom ul,
+.t396 .tn-atom ol {
+  margin-bottom: 0;
+}
+
+/* Shapes whose artwork is a background image: Tilda's lazyloader used to set
+   this at runtime from data-original; here it is rendered straight into the
+   markup, so the image is present on first paint. */
+.t396 .tn-atom[data-bg] {
+  background-size: cover;
+}
+
+/* --- links ------------------------------------------------------------- */
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #ff9800;
+  outline-offset: 3px;
+}
+
+/* =========================================================================
+   Scroll-in animations
+   Reproduces the four styles the original used (fadeinup, fadeinleft,
+   fadeinright, zoomin) with the same duration/distance/scale values.
+   Elements are only hidden once JS has confirmed it will animate them, so a
+   failed script or a no-JS visitor still sees the full page.
+   ========================================================================= */
+
+.js .anim-init {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.js .anim-init[data-anim='fadeinup'] {
+  transform: translateY(var(--anim-distance, 100px));
+}
+
+.js .anim-init[data-anim='fadeinleft'] {
+  transform: translateX(calc(-1 * var(--anim-distance, 100px)));
+}
+
+.js .anim-init[data-anim='fadeinright'] {
+  transform: translateX(var(--anim-distance, 100px));
+}
+
+.js .anim-init[data-anim='zoomin'] {
+  transform: scale(var(--anim-scale, 0.9));
+}
+
+.js .anim-init.anim-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--anim-duration, 1s) ease-in-out,
+    transform var(--anim-duration, 1s) ease-in-out;
+  transition-delay: var(--anim-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /*
+   * Must carry the same specificity as the per-style rules above
+   * (.js .anim-init[data-anim='…']) and come later, or the starting transform
+   * would stick and leave every animated element permanently displaced.
+   */
+  .js .anim-init[data-anim] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

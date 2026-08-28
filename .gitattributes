@@ -1,0 +1,24 @@
+# Normalise line endings: LF in the repository, native in the working copy.
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.avif binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.mp3 binary
+*.mp4 binary
+
+# Keep the archived Tilda snapshot out of language stats and diffs.
+old/** linguist-vendored
+old/index.html -diff
+old/assets/js/** -diff
+old/assets/css/** -diff

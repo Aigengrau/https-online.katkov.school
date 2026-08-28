@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Artboard from '../components/Artboard.astro';
+import RegPopup from '../components/RegPopup.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+import blocks from '../data/blocks.json';
+import type { BlockRecord } from '../data/types';
+
+const records = blocks as unknown as BlockRecord[];
+const artboards = records.filter((r) => r.kind === 'artboard');
+---
+
+<Base>
+  {artboards.map((record) => <Artboard record={record} />)}
+  <RegPopup />
+  <CookieBanner />
+</Base>

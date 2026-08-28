@@ -1,0 +1,89 @@
+---
+import { cookieNotice } from '../data/site';
+---
+
+<div class="cookie" data-cookie hidden>
+  <p class="cookie__text">{cookieNotice.text}</p>
+  <button type="button" class="cookie__btn" data-cookie-accept>{cookieNotice.accept}</button>
+</div>
+
+<style>
+  .cookie[hidden] {
+    display: none;
+  }
+
+  .cookie {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: min(640px, calc(100vw - 40px));
+    padding: 20px 24px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
+  }
+
+  .cookie__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: #333;
+  }
+
+  .cookie__btn {
+    flex: none;
+    padding: 10px 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .cookie__btn:hover {
+    border-color: #ff9800;
+    color: #ff9800;
+  }
+
+  @media (max-width: 640px) {
+    .cookie {
+      right: 10px;
+      left: 10px;
+      bottom: 10px;
+      max-width: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+  }
+</style>
+
+<script>
+  const KEY = 'cookie-consent';
+  const banner = document.querySelector<HTMLElement>('[data-cookie]');
+
+  if (banner) {
+    let accepted = false;
+    try {
+      accepted = localStorage.getItem(KEY) === 'yes';
+    } catch {
+      // Storage blocked (private mode): show the notice, just don't remember.
+    }
+
+    if (!accepted) banner.hidden = false;
+
+    banner.querySelector('[data-cookie-accept]')?.addEventListener('click', () => {
+      banner.hidden = true;
+      try {
+        localStorage.setItem(KEY, 'yes');
+      } catch {
+        /* nothing to do */
+      }
+    });
+  }
+</script>

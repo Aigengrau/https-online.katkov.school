@@ -1,0 +1,124 @@
+---
+import { registration } from '../data/site';
+---
+
+<div class="popup" id="reg-popup" data-popup hidden>
+  <div class="popup__backdrop" data-popup-close></div>
+  <div class="popup__dialog" role="dialog" aria-modal="true" aria-label="Регистрация на вебинар" tabindex="-1">
+    <button type="button" class="popup__close" data-popup-close aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+    <div class="popup__body" data-popup-body data-widget-src={registration.widgetSrc} data-widget-id={registration.widgetId}></div>
+  </div>
+</div>
+
+<style>
+  .popup[hidden] {
+    display: none;
+  }
+
+  .popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+
+  .popup__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 0.7);
+  }
+
+  .popup__dialog {
+    position: relative;
+    width: min(100%, 640px);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px 24px;
+  }
+
+  .popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    inline-size: 36px;
+    block-size: 36px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .popup__close svg {
+    inline-size: 20px;
+    block-size: 20px;
+  }
+
+  .popup__body {
+    min-height: 120px;
+  }
+</style>
+
+<script>
+  const popup = document.querySelector<HTMLElement>('[data-popup]');
+  const body = popup?.querySelector<HTMLElement>('[data-popup-body]');
+  const dialog = popup?.querySelector<HTMLElement>('.popup__dialog');
+
+  if (popup && body && dialog) {
+    let widgetLoaded = false;
+    let lastFocused: HTMLElement | null = null;
+
+    /** The GetCourse widget is only fetched the first time the popup opens. */
+    const loadWidget = () => {
+      if (widgetLoaded) return;
+      widgetLoaded = true;
+      const src = body.dataset.widgetSrc;
+      const id = body.dataset.widgetId;
+      if (!src) return;
+      const s = document.createElement('script');
+      s.src = src;
+      if (id) s.id = id;
+      body.appendChild(s);
+    };
+
+    const open = () => {
+      lastFocused = document.activeElement as HTMLElement | null;
+      popup.hidden = false;
+      document.body.style.overflow = 'hidden';
+      loadWidget();
+      dialog.focus();
+    };
+
+    const close = () => {
+      popup.hidden = true;
+      document.body.style.overflow = '';
+      lastFocused?.focus();
+    };
+
+    // Every "register" button on the page points at #reg.
+    document.querySelectorAll<HTMLAnchorElement>('a[href="#reg"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        open();
+      });
+    });
+
+    popup.querySelectorAll('[data-popup-close]').forEach((el) => el.addEventListener('click', close));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !popup.hidden) close();
+    });
+
+    // Deep link: /#reg opens the form directly, as it did on the original.
+    if (window.location.hash === '#reg') open();
+  }
+</script>

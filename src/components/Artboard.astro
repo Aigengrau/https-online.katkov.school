@@ -1,0 +1,21 @@
+---
+import ZeroElement from './ZeroElement.astro';
+import type { BlockRecord } from '../data/types';
+
+interface Props {
+  record: BlockRecord;
+}
+
+const { record } = Astro.props;
+const elements = record.elements ?? [];
+---
+
+<div id={record.id} class="r t-rec">
+  <div class="t396">
+    <div class="t396__artboard" data-artboard-recid={record.numericId}>
+      <div class="t396__carrier"></div>
+      <div class="t396__filter"></div>
+      {elements.map((el) => <ZeroElement el={el} recId={record.id} />)}
+    </div>
+  </div>
+</div>
